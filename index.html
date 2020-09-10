@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html manifest="cmf.manifest">
+
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="mycss.css">
+
+  <title>Offline Mobile App</title>
+  <script>
+
+  function changeImage(){
+      document.images["jsbutton"].src="Images/off.jpg";
+      return true;
+  }
+
+  function changeImagemore(){
+      document.images["jsbutton"].src="Images/on.jpg";
+      return true;
+  }
+  
+  </script>
+
+
+</head>
+
+<body>
+<img name="jsbutton" src="images/on.jpg" width="30%" height="30%" border="0">
+<br>
+<input type=button onclick="changeImage()" value="Change the bulb"></input>
+&nbsp;&nbsp;<input type=button onclick="changeImagemore()" value="Previous bulb"></input>
+
+</body>
+</html>
